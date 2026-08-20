@@ -1,3 +1,4 @@
+/* Homepage version: 2026-08-20 v3 */
 :root {
   --bg: #f7f6f2;
   --surface: rgba(255, 255, 255, 0.72);
@@ -150,12 +151,12 @@ a:focus-visible {
 }
 
 .hero {
-  padding-top: 88px;
-  padding-bottom: 88px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 .hero-grid {
-  min-height: 620px;
+  min-height: 560px;
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(380px, 0.88fr);
   align-items: center;
@@ -182,12 +183,23 @@ a:focus-visible {
 
 .hero h1 {
   max-width: 760px;
-  font-size: clamp(3.6rem, 7vw, 6.4rem);
+  font-size: clamp(2.5rem, 4.2vw, 3.8rem);
   font-weight: 770;
 }
 
-.hero h1 span {
+.hero-name-en {
+  display: block;
   color: var(--accent-strong);
+}
+
+.hero-name-zh {
+  display: block;
+  margin-top: 0.45rem;
+  color: var(--ink);
+  font-size: 0.42em;
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
 }
 
 .hero-role {
@@ -905,7 +917,7 @@ a:focus-visible {
   }
 
   .hero h1 {
-    font-size: clamp(3.2rem, 17vw, 4.7rem);
+    font-size: clamp(2.25rem, 9.5vw, 3.1rem);
   }
 
   .hero-role br {
